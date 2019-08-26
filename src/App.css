@@ -50,3 +50,7 @@ p {
   text-align: right;
   background-color: rgb(107, 107, 107);
 }
+
+#author {
+  margin-top: 20px;
+}
