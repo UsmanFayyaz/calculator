@@ -26,6 +26,12 @@ class Presentational extends React.Component {
   handleChange(data) {
     var temp = this.state.input;
 
+    if(temp.length >= 18) {
+      alert("Too big");
+      this.clear();
+      return;
+    }
+
     if (this.state.input === "0") {
       temp = data;
     } else {
