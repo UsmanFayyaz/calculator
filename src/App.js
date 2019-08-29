@@ -26,7 +26,7 @@ class Presentational extends React.Component {
   handleChange(data) {
     var temp = this.state.input;
 
-    if(temp.length >= 18) {
+    if (temp.length >= 18) {
       alert("Too big");
       this.clear();
       return;
@@ -72,8 +72,9 @@ class Presentational extends React.Component {
       temp1 = eval(temp1);
     } catch (e) {
       if (e instanceof SyntaxError) {
-        alert("Syntax Error");
-        this.clear();
+        this.setState({
+          answer: "Syntax Error"
+        })
         error = true;
       }
     }
