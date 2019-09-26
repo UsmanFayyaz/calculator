@@ -127,8 +127,8 @@ class Presentational extends React.Component {
           </table>
         </div>
         <div id="author">
-          <p>Designed and Coded by</p> <br />
-          <a href="https://github.com/UsmanFayyaz/calculator">Usman Fayyaz</a>
+          <p>Designed and Coded by <b>Usman Fayyaz</b>.</p> <br />
+          <a href="https://github.com/UsmanFayyaz/calculator">Link to github repository.</a>
         </div>
       </div>
     );
